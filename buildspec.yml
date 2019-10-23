@@ -8,7 +8,7 @@ phases:
       - yum install -y https://centos7.iuscommunity.org/ius-release.rpm
       - yum update -y
       - yum install -y python36u python36u-libs python36u-devel python36u-pip
-  pre_build:
+  post_build:
     commands:
       - pip install dash==1.4.1
       - pip install dash
