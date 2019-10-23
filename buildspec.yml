@@ -22,4 +22,10 @@ phases:
 artifacts:
   files:
     -  README.md
+    -  application.py
+eb_codebuild_settings:
+  CodeBuildServiceRole: AWSCodePipelineServiceRole-us-east-1-samplepipeline2
+  ComputeType: BUILD_GENERAL1_SMALL
+  Image: aws/codebuild/standard:2.0
+  Timeout: 60
       
