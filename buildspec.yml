@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
+      - sudo yum update -y
+      - sudo yum install -y python36u python36u-libs python36u-devel 
+      - sudo yum install python-pip
+  pre_build:
+    commands:
+      - sudo pip install dash==1.4.1
+      - sudo pip install pandas
+      - sudo pip install dash-daq==0.2.1
+      - sudo pip install numpy
+      - sudo pip install plotly_express
+      - sudo pip install pickle 
+      - sudo pip install datetime
+      - sudo pip install pandas-datareader
+  build:
+    commands:
+      - python app.py
+      
