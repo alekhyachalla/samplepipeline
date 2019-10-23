@@ -15,7 +15,7 @@ phases:
       - pip install dash-daq==0.2.1
       - pip install numpy
       - pip install plotly_express
-      - pip install pickle 
+      - pip install pickle-mixin
       - pip install datetime
       - pip install pandas-datareader
   build:
