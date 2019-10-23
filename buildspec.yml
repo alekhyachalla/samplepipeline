@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-        python: 3.6
+        python: 3.7
     commands:
       - sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
       - sudo yum update -y
