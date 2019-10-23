@@ -21,7 +21,7 @@ phases:
       - pip install pandas-datareader
   build:
     commands:
-      - python3 app.py
+      - python app.py
 artifacts:
   files:
     -  README.md
