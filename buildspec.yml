@@ -19,9 +19,6 @@ phases:
       - pip install pickle-mixin
       - pip install datetime
       - pip install pandas-datareader
-#   build:
-#     commands:
-#       - python app.py
 artifacts:
   files:
     -  README.md
